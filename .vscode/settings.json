@@ -1,0 +1,21 @@
+{
+	"editor.insertSpaces": false,
+	"js/ts.format.insertSpaceAfterConstructor": true,
+	"terminal.integrated.initialHint": false,
+	"editor.detectIndentation": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"files.autoSave": "afterDelay",
+	"[c]": {
+		"editor.defaultFormatter": "keyhr.42-c-format"
+	},
+	"editor.formatOnSave": true,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"editor.tabSize": 4,
+	"editor.renderWhitespace": "all",
+	"42-c-format.executable": "/home/yusakaki/.local/bin/c_formatter_42",
+	"42-c-format.args": [],
+	"terminal.integrated.enableMultiLinePasteWarning": "never"
+}
