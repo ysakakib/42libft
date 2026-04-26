@@ -6,16 +6,16 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:54:26 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/24 18:17:18 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/26 14:25:02 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	if ()
-	int i;
+	size_t i;
 	size_t len;
 
 	len = ft_strlen(dstsize);
