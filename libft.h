@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 17:42:07 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/26 19:47:14 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/26 21:05:24 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ void	*ft_memcpy(void *dst, const void *restrict src, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	strlcat(char *dst, const char *src, size_t size);
 
 #endif

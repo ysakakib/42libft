@@ -1,46 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 16:54:26 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/26 21:16:57 by yusakaki         ###   ########.fr       */
+/*   Created: 2026/04/26 21:03:25 by yusakaki          #+#    #+#             */
+/*   Updated: 2026/04/26 21:49:12 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	len;
+	size_t	j;
 
-	len = ft_strlen(src);
-	if (dstsize == 0)
-		return (len);
 	i = 0;
-	while (src[i] != '\0' && i < (dstsize - 1))
-	{
-		dst[i] = src[i];
+	j = 0;
+	if (ft_strlen(dst) >= size)
+		return (ft_strlen(src) + size);
+	while (dst[i] != '\0')
 		i++;
+	while (src[j] != '\0' && i < (size - 1))
+	{
+		dst[i] = src[j];
+		i++;
+		j++;
 	}
 	dst[i] = '\0';
-	return (len);
+	return (ft_strlen(src) + ft_strlen(dst));
 }
 
 int	main(void)
 {
-	size_t	size1;
-	size_t	size2;
-	char	*src;
-	char	dst1[40];
-	char	dst2[40];
+	char	src[20] = "hello ";
+	char	dst[20] = "world";
 
-	src = "hello world";
-	printf("%zu\n", ft_strlcpy(dst1, src, 6));
-	// src = "hello world";
-	// printf("%zu\n", strlcpy(dst2, src, 6));
+	printf("%zu\n", ft_strlcat(dst, src, 4));
 	return (0);
 }
