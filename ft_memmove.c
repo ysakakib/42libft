@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:52:17 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/26 17:41:14 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/26 18:20:44 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,16 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (d);
 }
 
-int	main(void)
-{
-	char	str1[20] = "hello world";
-	char	str2[20] = "hello world";
+// int	main(void)
+// {
+// 	char	str1[20] = "hello world";
+// 	char	str2[20] = "hello world";
 
-	// char	dst[40];
-	// size_t	n = 5;
-	memmove(str1 + 2, str1, 3);
-	printf("%s\n", str1);
-	ft_memmove(str2 + 2, str2, 3);
-	printf("%s\n", str2);
-	return (0);
-}
+// 	// char	dst[40];
+// 	// size_t	n = 5;
+// 	memmove(str1 + 2, str1, 3);
+// 	printf("%s\n", str1);
+// 	ft_memmove(str2 + 2, str2, 3);
+// 	printf("%s\n", str2);
+// 	return (0);
+// }

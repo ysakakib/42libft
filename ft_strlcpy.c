@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:54:26 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/26 14:25:02 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/26 19:55:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,35 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	if ()
-	size_t i;
-	size_t len;
+	size_t	i;
+	size_t	len;
 
-	len = ft_strlen(dstsize);
+	len = ft_strlen(src);
 	if (dstsize == 0)
-		return (0);
+		return (len);
 	i = 0;
-	while (i < dstsize)
+	while (src[i] != '\0' && i < (dstsize - 1))
 	{
 		dst[i] = src[i];
 		i++;
 	}
-	return (dst);
+	dst[i] = '\0';
+	return (len);
 }
 
-int main(void)
-{
-	size_t size = 4;
-	char src = "hello world";
-	char dst[40];
-	printf("%zu\n", strlcpy(dst, size, src));
-	printf("%zu\n", ft_strlcpy(dst, size, src));
-	return (0);
-}
+// int	main(void)
+// {
+// 	size_t	size1;
+// 	size_t	size2;
+// 	char	*src;
+// 	char	dst1[40];
+// 	char	dst2[40];
+
+// 	src = "hello world";
+// 	size1 = ft_strlcpy(dst1, src, 6);
+// 	printf("%zu\n", size1);
+// 	// src = "hello world";
+// 	// size2 = strlcpy(dst2, src, 6);
+// 	// printf("%zu\n", size2);
+// 	return (0);
+// }
