@@ -6,15 +6,15 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:52:17 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/26 14:33:09 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/26 17:41:14 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*d;
+	unsigned char		*d;
 	const unsigned char	*s;
 
 	// if (!dst && !src)
@@ -36,12 +36,14 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 
 int	main(void)
 {
-	char	str[20] = "hello world";
+	char	str1[20] = "hello world";
+	char	str2[20] = "hello world";
+
 	// char	dst[40];
 	// size_t	n = 5;
-	memmove(str + 2, str, 3);
-	printf("%s\n", str);
-	ft_memmove(str + 2, str, 3);
-	printf("%s\n", str);
+	memmove(str1 + 2, str1, 3);
+	printf("%s\n", str1);
+	ft_memmove(str2 + 2, str2, 3);
+	printf("%s\n", str2);
 	return (0);
 }
