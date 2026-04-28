@@ -6,36 +6,41 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:23:24 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/28 17:05:48 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/29 08:08:39 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t n;
-	size_t h = 0;
-	if (haystack[0] == '\0')
-		return ((char *)haystack);
-	while (haystack[h] != '\0')
+	size_t	l;
+	size_t	b;
+
+	b = 0;
+	if (big[0] == '\0')
+		return ((char *)big);
+	while (big[b] != '\0')
 	{
-		n =0;
-		while (needle[n] == haystack[h + n] && (h + n) < len)
+		l = 0;
+		while (little[l] == big[b + l] && (b + l) < len)
 		{
-			if (needle[n + 1] == '\0')
-				return (needle);
-			n++;
+			if (little[l + 1] == '\0')
+				return ((char *)&big[b]);
+			l++;
 		}
-		h++;
+		b++;
 	}
 	return (NULL);
 }
 
-int main(void)
+int	main(void)
 {
-	char *h = "hello world";
-	char *n = "world";
-	printf("%s\n", ft_strnstr(h, n, 60));
+	char	*b;
+	char	*l;
+
+	b = "bello world";
+	l = "world";
+	printf("%p\n", ft_strnstr(b, l, 60));
 	return (0);
 }
