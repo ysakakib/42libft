@@ -1,44 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 11:15:05 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/28 12:17:16 by yusakaki         ###   ########.fr       */
+/*   Created: 2026/04/28 10:54:49 by yusakaki          #+#    #+#             */
+/*   Updated: 2026/04/28 12:06:43 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+void *ft_memchr(const void *s, int c, size_t n)
 {
-	char	cc = (char)c;
-	while (*s != '\0')
+	unsigned char *str;
+	unsigned char uc;
+	size_t i;
+
+	str = (unsigned char *)s;
+	uc = (unsigned char)c;
+	i = 0;
+	while (i < n)
 	{
-		if (*s == cc)
-			return ((char *)s);
-		s++;
+		if (str[i] == uc)
+			return ((void	*)&str[i]);
+		i++;
 	}
-	if (cc == '\0')
-		return ((char *)s);
 	return (NULL);
 }
 
 // int main(void)
 // {
-// 	int c = '\0';
 // 	char *s = "hello world";
-// 	printf("%s\n", ft_strchr(s, c));
-// 	c = '\0';
+// 	char c = 'e';
+// 	printf("%p\n", ft_memchr(s, c, 6));
 // 	s = "hello world";
-// 	printf("%s\n", strchr(s, c));
 // 	c = 'e';
+// 	printf("%p\n", memchr(s, c, 6));
 // 	s = "hello world";
-// 	printf("%s\n", ft_strchr(s, c));
-// 	c = 'e';
+// 	c = 'a';
+// 	printf("%p\n", ft_memchr(s, c, 6));
 // 	s = "hello world";
-// 	printf("%s\n", strchr(s, c));
+// 	c = 'a';
+// 	printf("%p\n", memchr(s, c, 6));
 // 	return (0);
 // }

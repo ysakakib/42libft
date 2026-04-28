@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 10:45:11 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/27 13:02:32 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:36:30 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,19 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-int main(void)
-{
-	int c = 'a';
-	printf("%c\n", ft_toupper(c));
-	c = 'A';
-	printf("%c\n", ft_toupper(c));
-	c = '-';
-	printf("%c\n", ft_toupper(c));
-	return (0);
-}
+// int main(void)
+// {
+// 	int c = 'a';
+// 	printf("%c\n", ft_toupper(c));
+// 	c = 'a';
+// 	printf("%c\n", toupper(c));
+// 	c = 'A';
+// 	printf("%c\n", ft_toupper(c));
+// 	c = 'A';
+// 	printf("%c\n", toupper(c));
+// 	c = '-';
+// 	printf("%c\n", ft_toupper(c));
+// 	c = '-';
+// 	printf("%c\n", toupper(c));
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 10:15:54 by username          #+#    #+#             */
-/*   Updated: 2026/04/24 16:01:55 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:12:40 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int	ft_isalnum(int c)
 // 	int c = '8';
 
 // 	printf("%d\n", ft_isalnum(c));
-// 	// printf("%d\n", isalnum(c));
+// printf("%d\n", isalnum(c));
 // 	return (0);
 // }

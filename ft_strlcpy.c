@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:54:26 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/26 21:16:57 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:34:19 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (len);
 }
 
-int	main(void)
-{
-	size_t	size1;
-	size_t	size2;
-	char	*src;
-	char	dst1[40];
-	char	dst2[40];
+// int	main(void)
+// {
+// 	size_t	size1;
+// 	size_t	size2;
+// 	char	*src;
+// 	char	dst1[40];
+// 	char	dst2[40];
 
-	src = "hello world";
-	printf("%zu\n", ft_strlcpy(dst1, src, 6));
-	// src = "hello world";
-	// printf("%zu\n", strlcpy(dst2, src, 6));
-	return (0);
-}
+// 	src = "hello world";
+// 	printf("%zu\n", ft_strlcpy(dst1, src, 6));
+// 	// src = "hello world";
+// 	// printf("%zu\n", strlcpy(dst2, src, 6));
+// 	return (0);
+// }

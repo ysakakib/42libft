@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:13:28 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/27 13:32:57 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:12:10 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,19 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-int main(void)
-{
-	int c = 'a';
-	printf("%c\n", ft_tolower(c));
-	c = 'A';
-	printf("%c\n", ft_tolower(c));
-	c = '-';
-	printf("%c\n", ft_tolower(c));
-	return (0);
-}
+// int main(void)
+// {
+// 	int c = 'a';
+// 	printf("%c\n", ft_tolower(c));
+// 	c = 'a';
+// 	printf("%c\n", tolower(c));
+// 	c = 'A';
+// 	printf("%c\n", ft_tolower(c));
+// 	c = 'A';
+// 	printf("%c\n", tolower(c));
+// 	c = '-';
+// 	printf("%c\n", ft_tolower(c));
+// 	c = '-';
+// 	printf("%c\n", tolower(c));
+// 	return (0);
+// }

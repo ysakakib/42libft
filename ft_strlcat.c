@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 21:03:25 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/26 21:49:12 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:32:42 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (ft_strlen(src) + ft_strlen(dst));
 }
 
-int	main(void)
-{
-	char	src[20] = "hello ";
-	char	dst[20] = "world";
-
-	printf("%zu\n", ft_strlcat(dst, src, 4));
-	return (0);
-}
+// int	main(void)
+// {
+// 	char	*src = "hello ";
+// 	char	*dst = "world";
+// 	printf("%zu\n", ft_strlcat(dst, src, 4));
+// 	// src = "hello ";
+// 	// dst = "world";
+// 	// printf("%zu\n", strlcat(dst, src, 4));
+// 	return (0);
+// }

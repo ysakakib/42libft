@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 15:18:02 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/24 16:02:16 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:13:04 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_isprint(int c)
 // {
 // 	int c = '3';
 
-// 	// printf("%d\n", isprint(c));
+// 	printf("%d\n", isprint(c));
 // 	printf("%d\n", ft_isprint(c));
 // 	return (0);
 // }

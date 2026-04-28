@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 09:09:46 by username          #+#    #+#             */
-/*   Updated: 2026/04/24 16:02:10 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/28 12:13:00 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int	ft_isdigit(int c)
 // 	int	c = '5';
 
 // 	printf("%d\n", ft_isdigit(c));
-// 	// printf("%d\n", isdigit(c));
+// 	printf("%d\n", isdigit(c));
 // 	return (0);
 // }
