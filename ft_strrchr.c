@@ -6,16 +6,16 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:17:03 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/28 12:35:29 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/29 22:25:23 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	char *last;
-	char cc;
+	char	*last;
+	char	cc;
 
 	cc = (char)c;
 	while (1)
@@ -23,7 +23,7 @@ char *ft_strrchr(const char *s, int c)
 		if (*s == cc)
 			last = (char *)s;
 		if (*s == '\0')
-			break;
+			break ;
 		s++;
 	}
 	return (last);

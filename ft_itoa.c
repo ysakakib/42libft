@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 19:02:10 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/23 20:38:19 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/29 22:24:22 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ char	*ft_itoa(int n)
 		num /= 10;
 		size--;
 	}
-
 	return (s);
 }
 
@@ -65,6 +64,6 @@ int	main(void)
 	n = -2147483648;
 	s = ft_itoa(n);
 	printf("%s\n", s);
-	free (s);
+	free(s);
 	return (0);
 }

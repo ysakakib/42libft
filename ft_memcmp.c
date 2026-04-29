@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:22:07 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/28 14:16:22 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/29 22:24:31 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t i;
-	const unsigned char *str1;
-	const unsigned char *str2;
+	size_t				i;
+	const unsigned char	*str1;
+	const unsigned char	*str2;
 
 	i = 0;
 	str1 = (const unsigned char *)s1;
@@ -27,7 +27,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 			return (str1[i] - str2[i]);
 		i++;
 	}
-	return(0);
+	return (0);
 }
 
 // ゴミ値を比較してしまうことがあるコードになっているため

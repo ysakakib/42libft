@@ -6,17 +6,17 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 10:54:49 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/28 12:06:43 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/29 22:24:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char *str;
-	unsigned char uc;
-	size_t i;
+	unsigned char	*str;
+	unsigned char	uc;
+	size_t			i;
 
 	str = (unsigned char *)s;
 	uc = (unsigned char)c;
@@ -24,7 +24,7 @@ void *ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == uc)
-			return ((void	*)&str[i]);
+			return ((void *)&str[i]);
 		i++;
 	}
 	return (NULL);
