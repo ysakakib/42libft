@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:18:49 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/29 22:25:18 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/04/30 22:16:58 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,22 +40,22 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 // 	return (0);
 // }
 
-int	main(void)
-{
-	char	*s1;
-	char	*s2;
+// int	main(void)
+// {
+// 	char	*s1;
+// 	char	*s2;
 
-	s1 = "hello";
-	s2 = "world";
-	printf("%d\n", ft_strncmp(s1, s2, 4));
-	s1 = "hello";
-	s2 = "hello";
-	printf("%d\n", ft_strncmp(s1, s2, 4));
-	s1 = "hel";
-	s2 = "hello";
-	printf("%d\n", ft_strncmp(s1, s2, 6));
-	s1 = "hello";
-	s2 = "hel";
-	printf("%d\n", ft_strncmp(s1, s2, 6));
-	return (0);
-}
+// 	s1 = "hello";
+// 	s2 = "world";
+// 	printf("%d\n", ft_strncmp(s1, s2, 4));
+// 	s1 = "hello";
+// 	s2 = "hello";
+// 	printf("%d\n", ft_strncmp(s1, s2, 4));
+// 	s1 = "hel";
+// 	s2 = "hello";
+// 	printf("%d\n", ft_strncmp(s1, s2, 6));
+// 	s1 = "hello";
+// 	s2 = "hel";
+// 	printf("%d\n", ft_strncmp(s1, s2, 6));
+// 	return (0);
+// }

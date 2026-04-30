@@ -5,52 +5,76 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/30 11:01:58 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/30 11:09:19 by yusakaki         ###   ########.fr       */
+/*   Created: 2026/04/30 22:48:03 by yusakaki          #+#    #+#             */
+/*   Updated: 2026/04/30 22:56:18 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	l;
 	char	*sub;
 	size_t	i;
+	size_t	l;
 
 	i = 0;
 	l = ft_strlen(s);
-	if (len < l - start)
-		return (ft_strdup())
-	sub = (char *)malloc(sizeof(char) * (l + 1));
+	if (start >= l)
+		return (ft_strdup(""));
+	if (len > l - start)
+		len = l - start;
+	sub = (char *)malloc(sizeof(char) * (len + 1));
 	if (!sub)
 		return (NULL);
-	if (l <= 0)
+	while (i < len && s[start + i])
 	{
-		sub[0] = '\0';
-		return (sub);
-	}
-	if (l < len)
-	{
-		// l2 =l1 - len;
-		while (i <= l1)
-		{
-			sub[i] = s[start];
-			i++;
-			start++;
-		}
-		sub[i] = '\0';
-		return (sub);
-	}
-	while (i <= len)
-	{
-		sub[i] = s[start];
+		sub[i] = s[start + i];
 		i++;
-		start++;
 	}
 	sub[i] = '\0';
-	return (str);
+	return (sub);
 }
+
+//間違い
+// char	*ft_substr(char const *s, unsigned int start, size_t len)
+// {
+// 	size_t	l1;
+// 	size_t	l2;
+// 	char	*sub;
+// 	size_t	i;
+
+// 	i = 0;
+// 	l1 = ft_strlen(s) - start;
+// 	sub = (char *)malloc(sizeof(char) * (l1 + 1));
+// 	if (!sub)
+// 		return (NULL);
+// 	if (l1 <= 0)
+// 	{
+// 		sub[0] = '\0';
+// 		return (sub);
+// 	}
+// 	if (l1 < len)
+// 	{
+// 		// l2 =l1 - len;
+// 		while (i <= l1)
+// 		{
+// 			sub[i] = s[start];
+// 			i++;
+// 			start++;
+// 		}
+// 		sub[i] = '\0';
+// 		return (sub);
+// 	}
+// 	while (i <= len)
+// 	{
+// 		sub[i] = s[start];
+// 		i++;
+// 		start++;
+// 	}
+// 	sub[i] = '\0';
+// 	return (str);
+// }
 
 int	main(void)
 {
