@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 09:02:08 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/29 22:24:06 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/01 16:02:13 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,15 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*s;
-	size_t	ts;
-
-	ts = count * size;
-	s = malloc(ts);
-	if (s == NULL)
+	void *s;
+	size_t total_size = count * size;
+	size_t l = total_size;
+	s = malloc(total_size);
+	if (!s)
 		return (NULL);
-	ft_bzero(s, ts);
+	ft_bzero(s, total_size);
 	return (s);
 }
-
-// 間違え
-// int main(void)
-// {
-// 	size_t c = 6;
-// 	size_t s = 5;
-// 	printf("%s\n", ft_calloc(c, s));
-// 	return (0);
-// }
 
 int	main(void)
 {
@@ -59,3 +49,25 @@ int	main(void)
 	free(res);
 	return (0);
 }
+
+// void	*ft_calloc(size_t count, size_t size)
+// {
+// 	void	*s;
+// 	size_t	ts;
+
+// 	ts = count * size;
+// 	s = malloc(ts);
+// 	if (s == NULL)
+// 		return (NULL);
+// 	ft_bzero(s, ts);
+// 	return (s);
+// }
+
+// 間違え
+// int main(void)
+// {
+// 	size_t c = 6;
+// 	size_t s = 5;
+// 	printf("%s\n", ft_calloc(c, s));
+// 	return (0);
+// }
