@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 10:54:49 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/01 18:39:46 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/02 00:13:58 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t i = 0;
-	unsigned char *str = (unsigned chqar *)s;
+	unsigned char *str = (unsigned char *)s;
 	while (i < n)
 	{
 		if (str[i] == c)

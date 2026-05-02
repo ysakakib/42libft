@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 09:02:08 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/01 16:02:13 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/01 22:24:01 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *s;
-	size_t total_size = count * size;
-	size_t l = total_size;
+	void	*s;
+	size_t	total_size;
+	size_t	l;
+
+	total_size = count * size;
+	l = total_size;
 	s = malloc(total_size);
 	if (!s)
 		return (NULL);
@@ -24,31 +27,31 @@ void	*ft_calloc(size_t count, size_t size)
 	return (s);
 }
 
-int	main(void)
-{
-	size_t	count;
-	int		*res;
-	size_t	i;
+// int	main(void)
+// {
+// 	size_t	count;
+// 	int		*res;
+// 	size_t	i;
 
-	count = 5;
-	size_t size = sizeof(int); // int型を5個分
-	res = (int *)ft_calloc(count, size);
-	if (res == NULL)
-	{
-		printf("Malloc failed\n");
-		return (1);
-	}
-	// 中身がすべて 0 であることを確認
-	i = 0;
-	while (i < count)
-	{
-		printf("[%d] ", res[i]); // 全て 0 と表示されれば成功
-		i++;
-	}
-	printf("\n");
-	free(res);
-	return (0);
-}
+// 	count = 5;
+// 	size_t size = sizeof(int); // int型を5個分
+// 	res = (int *)ft_calloc(count, size);
+// 	if (res == NULL)
+// 	{
+// 		printf("Malloc failed\n");
+// 		return (1);
+// 	}
+// 	// 中身がすべて 0 であることを確認
+// 	i = 0;
+// 	while (i < count)
+// 	{
+// 		printf("[%d] ", res[i]); // 全て 0 と表示されれば成功
+// 		i++;
+// 	}
+// 	printf("\n");
+// 	free(res);
+// 	return (0);
+// }
 
 // void	*ft_calloc(size_t count, size_t size)
 // {
