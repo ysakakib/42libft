@@ -27,7 +27,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	{
 		while (set)
 		{
-			if (s1[i] = set)
+			if (s1[i] == set[i])
 			{
 				s2[j] = s1[i];
 				j++;
@@ -40,12 +40,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 int	main(void)
 {
-	char	t;
+	char	t[50] = "a";
 	char	*s1;
 	char	*s2;
 
-	t = 'a';
-	s1 = 'hello woarld';
+	s1 = "hello woarld";
 	s2 = ft_strtrim(s1, t);
 	printf("%s\n", s2);
 	free(s2);

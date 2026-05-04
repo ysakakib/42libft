@@ -1,5 +1,5 @@
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
-{
-}
+// char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+// {
+// }
 
-int	main(void)
+// int	main(void)

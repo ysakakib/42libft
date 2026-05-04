@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 09:04:31 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/30 21:13:17 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/04 10:17:53 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*s2;
-	size_t	i;
+	// size_t	i;
 	size_t	l;
 
-	i = 0;
+	// i = 0;
 	l = ft_strlen(s1);
 	s2 = (char *)malloc(sizeof(char) * (l + 1));
 	if (!s2)
