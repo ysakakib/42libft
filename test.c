@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/29 09:04:31 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/04 16:12:02 by yusakaki         ###   ########.fr       */
+/*   Created: 2026/05/04 17:18:35 by yusakaki          #+#    #+#             */
+/*   Updated: 2026/05/04 17:35:41 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
-char	*ft_strdup(const char *s1)
+void ft(char* const s)
 {
-	char	*s2;
-	size_t	l;
-
-	l = ft_strlen(s1);
-	s2 = (char *)malloc(sizeof(char) * (l + 1));
-	if (!s2)
-		return (NULL);
-	ft_memcpy(s2, s1, l + 1);
-	return (s2);
+	printf("%s", s);
+	s[2] = 'k';
+	printf("%s", s);
 }
 
-// int main(void)
-// {
-// 	char *s = ft_strdup("hello world");
-// 	printf("%s\n", s);
-// 	s = strdup("hello world");
-// 	printf("%s\n", s);
-// 	free(s);
-// 	return (0);
-// }
+int main(void)
+{
+	char *a = "nkoji";
+	// char *b = "nomura";
+	// char **s = ab;
+	ft(a);
+	return (0);
+}

@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 21:03:25 by hshimizu          #+#    #+#             */
-/*   Updated: 2026/05/04 09:46:56 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/04 16:53:33 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // 	// printf("%zu\n", strlcat(dst, src, 4));
 // 	return (0);
 // }
+
+
+
 
 // size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // {

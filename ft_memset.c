@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 13:41:55 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/03 13:42:00 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/04 10:46:15 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,14 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-int	main(void)
-{
-	char	str[10] = "AAAAAA";
+// int	main(void)
+// {
+// 	char	str[10] = "AAAAAA";
 
-	printf("%s\n", (char *)memset(str, 'B', 5));
-	printf("%s\n", (char *)ft_memset(str, 'B', 5));
-	return (0);
-}
+// 	printf("%s\n", (char *)memset(str, 'B', 5));
+// 	printf("%s\n", (char *)ft_memset(str, 'B', 5));
+// 	return (0);
+// }
 
 // void	*ft_memset(void *b, int c, size_t len)
 // {

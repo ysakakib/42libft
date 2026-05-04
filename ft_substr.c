@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/30 22:48:03 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/30 23:00:53 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/04 15:52:22 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,27 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	sub[i] = '\0';
 	return (sub);
+}
+
+int	main(void)
+{
+	char	*s1;
+	char	*s2;
+	int		start;
+	int		len;
+
+	s1 = "hello world";
+	start = 6;
+	len = 4;
+	s2 = ft_substr(s1, start, len);
+	printf("%s\n", s2);
+	s1 = "hello world";
+	start = 11;
+	len = 4;
+	s2 = ft_substr(s1, start, len);
+	printf("%s\n", s2);
+	free(s2);
+	return (0);
 }
 
 //間違い
@@ -75,24 +96,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // 	sub[i] = '\0';
 // 	return (str);
 // }
-
-int	main(void)
-{
-	char	*s1;
-	char	*s2;
-	int		start;
-	int		len;
-
-	s1 = "hello world";
-	start = 6;
-	len = 4;
-	s2 = ft_substr(s1, start, len);
-	printf("%s\n", s2);
-	s1 = "hello world";
-	start = 11;
-	len = 4;
-	s2 = ft_substr(s1, start, len);
-	printf("%s\n", s2);
-	free(s2);
-	return (0);
-}
