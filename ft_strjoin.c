@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 16:33:32 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/04 17:19:14 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 02:01:44 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,19 @@ char *ft_strjoin(char const *s1, char const *s2)
 	return (s);
 }
 
-int	main(void)
-{
-	char	*s1;
-	char	*s2;
-	char	*s;
+// int	main(void)
+// {
+// 	char	*s1;
+// 	char	*s2;
+// 	char	*s;
 
-	s1 = "hello ";
-	s2 = "world";
-	s = ft_strjoin(s1, s2);
-	printf("%s\n", s);
-	free(s);
-	return (0);
-}
+// 	s1 = "hello ";
+// 	s2 = "world";
+// 	s = ft_strjoin(s1, s2);
+// 	printf("%s\n", s);
+// 	free(s);
+// 	return (0);
+// }
 
 // char	*ft_strjoin(char const *s1, char const *s2)
 // {

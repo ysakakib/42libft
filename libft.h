@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 17:42:07 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/05 23:07:23 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 02:34:06 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <ctype.h>
 # include <fcntl.h>
 # include <locale.h>
+# include <stdint.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
@@ -46,7 +47,6 @@ int					ft_isprint(int c);
 size_t				ft_strlen(const char *s);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
-void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);

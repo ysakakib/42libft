@@ -6,7 +6,7 @@
 #    By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/02 17:00:33 by yusakaki          #+#    #+#              #
-#    Updated: 2026/05/04 10:40:59 by yusakaki         ###   ########.fr        #
+#    Updated: 2026/05/06 02:14:58 by yusakaki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,15 @@ SRCS	=	ft_atoi.c \
 			ft_isdigit.c \
 			ft_isprint.c \
 			ft_itoa.c \
+			ft_lstadd_back.c \
+			ft_lstadd_front.c \
+			ft_lstclear.c \
+			ft_lstdelone.c \
+			ft_lstiter.c \
+			ft_lstlast.c \
+			ft_lstmap.c \
+			ft_lstnew.c \
+			ft_lstsize.c \
 			ft_memchr.c \
 			ft_memcmp.c \
 			ft_memcpy.c \

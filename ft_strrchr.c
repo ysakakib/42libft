@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:17:03 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/05 14:56:39 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 02:29:23 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ char	*ft_strrchr(const char *s, int c)
 	char	*last;
 	char	cc;
 
+	last = NULL;
 	cc = (char)c;
 	while (1)
 	{
