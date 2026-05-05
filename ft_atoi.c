@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 16:00:16 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 00:24:21 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 02:57:15 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int		i;
-	int		sign;
-	long	result;
+	int				i;
+	int				sign;
+	unsigned long	result;
 
 	i = 0;
 	sign = 1;
@@ -31,6 +31,13 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
+		if (sign == 1 && (result > LONG_MAX / 10 || (result == LONG_MAX / 10
+					&& (str[i] - '0') > LONG_MAX % 10)))
+			return ((int)LONG_MAX);
+		if (sign == -1 && (result > (unsigned long)LONG_MIN / 10
+				|| (result == (unsigned long)LONG_MIN / 10 && (str[i]
+						- '0') > (unsigned long)LONG_MIN % 10)))
+			return ((int)LONG_MIN);
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 17:42:07 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 02:34:06 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 02:55:12 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <ctype.h>
 # include <fcntl.h>
+# include <limits.h>
 # include <locale.h>
 # include <stdint.h>
 # include <stdio.h>
