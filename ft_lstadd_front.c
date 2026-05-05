@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/05 05:55:32 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/05 14:58:44 by yusakaki         ###   ########.fr       */
+/*   Created: 2026/05/05 16:33:16 by yusakaki          #+#    #+#             */
+/*   Updated: 2026/05/05 16:42:09 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	write(fd, &c, 1);
-}
-
-int	main(void)
-{
-	ft_putchar_fd('A', STDOUT_FILENO);
-	ft_putchar_fd('B', 1);
-	return (0);
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

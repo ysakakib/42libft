@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/04 17:18:35 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/04 17:35:41 by yusakaki         ###   ########.fr       */
+/*   Created: 2026/05/05 17:12:41 by yusakaki          #+#    #+#             */
+/*   Updated: 2026/05/05 17:15:08 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void ft(char* const s)
+t_list *ft_lstlast(t_list *lst)
 {
-	printf("%s", s);
-	s[2] = 'k';
-	printf("%s", s);
-}
-
-int main(void)
-{
-	char *a = "nkoji";
-	// char *b = "nomura";
-	// char **s = ab;
-	ft(a);
-	return (0);
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }
