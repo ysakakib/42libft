@@ -6,13 +6,13 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 17:12:41 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 01:57:27 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 03:01:20 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (NULL);

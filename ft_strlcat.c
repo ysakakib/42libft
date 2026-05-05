@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 21:03:25 by hshimizu          #+#    #+#             */
-/*   Updated: 2026/05/06 02:52:53 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 02:59:56 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	s_len = ft_strlen(src);
 	d_len = 0;
-	// size の範囲内だけで dst の長さを測る（安全策）
 	while (d_len < size && dst[d_len] != '\0')
 		d_len++;
-	// もし size 内に \0 がなければ、即座に理論値を返す
 	if (d_len == size)
 		return (size + s_len);
-	// ここから連結処理
 	i = 0;
 	while (src[i] != '\0' && (d_len + i + 1) < size)
 	{
@@ -34,7 +31,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		i++;
 	}
 	dst[d_len + i] = '\0';
-	// 最後に strlen を呼び出さず、事前に測った値で計算する
 	return (d_len + s_len);
 }
 
