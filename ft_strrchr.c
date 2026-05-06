@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:17:03 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 02:29:23 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 16:52:21 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,16 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*last;
-	char	cc;
 
 	last = NULL;
-	cc = (char)c;
 	while (1)
 	{
-		if (*s == cc)
+		if (*s == (char)c)
 			last = (char *)s;
-		if (*s == '\0')
-			break ;
+		if (!*s)
+			return (last);
 		s++;
 	}
-	return (last);
 }
 
 // int	main(void)
@@ -45,4 +42,21 @@ char	*ft_strrchr(const char *s, int c)
 // 	s = "hello world";
 // 	printf("%s\n", strrchr(s, c));
 // 	return (0);
+// }
+
+
+// char	*ft_strrchr(const char *s, int c)
+// {
+// 	char	*last;
+
+// 	last = NULL;
+// 	while (1)
+// 	{
+// 		if (*s == (char)c)
+// 			last = (char *)s;
+// 		if (*s == '\0')
+// 			break ;
+// 		s++;
+// 	}
+// 	return (last);
 // }

@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:23:24 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 02:50:25 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 16:45:27 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,22 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	b;
-	size_t	l;
+	size_t	i;
+	size_t	j;
 
-	b = 0;
+	i = 0;
 	if (little[0] == '\0')
 		return ((char *)big);
-	while (big[b] != '\0' && b < len)
+	while (big[i] != '\0' && i < len)
 	{
-		l = 0;
-		while (big[b + l] == little[l] && (b + l) < len)
+		j = 0;
+		while (big[i + j] == little[j] && (i + j) < len)
 		{
-			if (little[l + 1] == '\0')
-				return ((char *)&big[b]);
-			l++;
+			if (little[j + 1] == '\0')
+				return ((char *)&big[i]);
+			j++;
 		}
-		b++;
+		i++;
 	}
 	return (NULL);
 }

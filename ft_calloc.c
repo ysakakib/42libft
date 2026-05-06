@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 09:02:08 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 02:43:42 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:09:05 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,6 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*s;
 	size_t	total_size;
 
-	if (count == 0 || size == 0)
-	{
-		count = 1;
-		size = 0;
-	}
 	if (count != 0 && size > SIZE_MAX / count)
 		return (NULL);
 	total_size = count * size;

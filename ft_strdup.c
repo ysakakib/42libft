@@ -6,23 +6,23 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 09:04:31 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/04 16:12:02 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 17:40:21 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strdup(const char *src)
 {
-	char	*s2;
-	size_t	l;
+	char	*dst;
+	size_t	len;
 
-	l = ft_strlen(s1);
-	s2 = (char *)malloc(sizeof(char) * (l + 1));
-	if (!s2)
+	len = ft_strlen(src);
+	dst = (char *)malloc(sizeof(char) * (len + 1));
+	if (!dst)
 		return (NULL);
-	ft_memcpy(s2, s1, l + 1);
-	return (s2);
+	ft_memcpy(dst, src, len + 1);
+	return (dst);
 }
 
 // int main(void)

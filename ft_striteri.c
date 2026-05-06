@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 05:41:14 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/05 05:52:31 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 16:01:58 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
+	if (!*f)
+		return ;
 	i = 0;
 	while (s[i])
 	{

@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 21:47:13 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/05 01:51:32 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 17:12:19 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char const	*first;
 	char const	*last;
 
+	if (!s1 || !set)
+		return (NULL);
 	first = s1;
 	last = s1 + ft_strlen(s1);
 	while (first < last && ft_strchr(set, *first))
