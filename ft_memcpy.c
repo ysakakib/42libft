@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:50:23 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/02 22:38:33 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 22:15:49 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*d;
 	unsigned char	*s;
 
+	if (!dst && !src)
+		return (NULL);
 	i = 0;
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
@@ -40,6 +42,23 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 // 	printf("%s\n", (char *)ft_memcpy(dst, src, n));
 // 	printf("%s\n", (char *)memcpy(dst, src, n));
 // 	return (0);
+// }
+
+// void	*ft_memcpy(void *dst, const void *src, size_t n)
+// {
+// 	unsigned char	*d;
+// 	unsigned char	*s;
+// 	size_t			i;
+
+// 	d = (unsigned char *)dst;
+// 	s = (unsigned char *)src;
+// 	i = 0;
+// 	while (i < n && d[i] != '\0')
+// 	{
+// 		d[i] = s[i];
+// 		i++;
+// 	}
+// 	return (dst);
 // }
 
 // void	*ft_memcpy(void *dst, const void *src, size_t n)

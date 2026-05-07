@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:47:07 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/01 22:23:42 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 20:24:09 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,13 @@ void	ft_bzero(void *s, size_t n)
 // 	printf("%s\n", str);
 // 	return (0);
 // }
+
+
+// void	ft_bzero(void *s, size_t n)
+// {
+// 	ft_memset(s, 0, n);
+// }
+
 
 // void	ft_bzero(void *s, size_t n)
 // {

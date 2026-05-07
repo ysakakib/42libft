@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 21:03:25 by hshimizu          #+#    #+#             */
-/*   Updated: 2026/05/06 17:52:44 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 23:23:07 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,20 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	i;
-	size_t	src_len;
-	size_t	dst_len;
-
-	i = 0;
-	src_len = ft_strlen(src);
-	dst_len = ft_strlen(dst);
-	if (dst_len >= size)
-		return (src_len + size);
-	while (src[i] != '\0' && (dst_len + i) < (size - 1))
+	size_t src_len = ft_strlen(src);
+	size_t dst_len = 0;
+	size_t i = 0;
+	while (dst[dst_len] != '\0' && dst_len < size)
+		dst_len++;
+	if (dst_len == size)
+		return (size + src_len);
+	while ((dst_len + i + 1) < size && src[i] != '\0')
 	{
 		dst[dst_len + i] = src[i];
 		i++;
 	}
 	dst[dst_len + i] = '\0';
-	return (src_len + dst_len);
+	return (dst_len + src_len);
 }
 
 // int	main(void)
@@ -38,13 +36,34 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // 	char	*dst = "world";
 
 // 	printf("%zu\n", ft_strlcat(dst, src, 4));
-// 	// src = "hello ";
-// 	// dst = "world";
-// 	// printf("%zu\n", strlcat(dst, src, 4));
+// 	src = "hello ";
+// 	dst = "world";
+// 	printf("%zu\n", strlcat(dst, src, 4));
 // 	return (0);
 // }
 
-// 猫さんVer　dstのみ終端文字がない可能性を考慮する。でもsrcはどうなる？
+
+// size_t	ft_strlcat(char *dst, const char *src, size_t size)
+// {
+// 	size_t	i;
+// 	size_t	src_len;
+// 	size_t	dst_len;
+
+// 	i = 0;
+// 	src_len = ft_strlen(src);
+// 	dst_len = ft_strlen(dst);
+// 	if (dst_len >= size)
+// 		return (src_len + size);
+// 	while (src[i] != '\0' && (dst_len + i) < (size - 1))
+// 	{
+// 		dst[dst_len + i] = src[i];
+// 		i++;
+// 	}
+// 	dst[dst_len + i] = '\0';
+// 	return (src_len + dst_len);
+// }
+
+
 // size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // {
 // 	size_t	dst_len;

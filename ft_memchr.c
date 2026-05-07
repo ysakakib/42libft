@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 10:54:49 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 15:26:53 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/07 20:08:47 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,24 @@ void	*ft_memchr(const void *s, int c, size_t n)
 // 	c = 'a';
 // 	printf("%p\n", memchr(s, c, 6));
 // 	return (0);
+// }
+
+// void	*ft_memchr(const void *s, int c, size_t n)
+// {
+// 	unsigned char	*str;
+// 	size_t			i;
+
+// 	i = 0;
+// 	str = (unsigned char *)s;
+// 	if (!s)//不要、本家同様クラッシュしても良い。
+// 		return (NULL);
+// 	while (i < n)
+// 	{
+// 		if (str[i] == c)//(unsigned char)cにしなければならない
+// 			return ((void *)&str[i]);
+// 		i++;
+// 	}
+// 	return (NULL);
 // }
 
 // void	*ft_memchr(const void *s, int c, size_t n)

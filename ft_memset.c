@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 13:41:55 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 15:45:35 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 22:12:45 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,12 @@ void	*ft_memset(void *b, int c, size_t len)
 	unsigned char	*buffer;
 	size_t			i;
 
+	if (!b)
+		return (NULL);
 	buffer = (unsigned char *)b;
 	i = 0;
+	if (!b)
+		return (NULL);
 	while (i < len)
 	{
 		buffer[i] = (unsigned char)c;
@@ -34,6 +38,21 @@ void	*ft_memset(void *b, int c, size_t len)
 // 	printf("%s\n", (char *)memset(str, 'B', 5));
 // 	printf("%s\n", (char *)ft_memset(str, 'B', 5));
 // 	return (0);
+// }
+
+// void	*ft_memset(void *b, int c, size_t len)
+// {
+// 	unsigned char	*buffer;
+// 	size_t			i;
+
+// 	buffer = (unsigned char *)b;
+// 	i = 0;
+// 	while (i < len)
+// 	{
+// 		buffer[i] = (unsigned char)c;
+// 		i++;
+// 	}
+// 	return (b);
 // }
 
 // void	*ft_memset(void *b, int c, size_t len)

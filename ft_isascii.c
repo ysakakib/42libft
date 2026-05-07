@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 15:03:17 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/28 12:12:54 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/06 20:10:30 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,13 @@ int	ft_isascii(int c)
 
 // 	printf("%d\n", isascii(c));
 // 	printf("%d\n", ft_isascii(c));
+// 	return (0);
+// }
+
+
+// int	ft_isascii(int c)
+// {
+// 	if (c >= 0 && c <= 127)
+// 		return (1);
 // 	return (0);
 // }

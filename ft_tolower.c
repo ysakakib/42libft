@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:13:28 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/04/28 12:12:10 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/07 18:39:12 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
+		return (c + ('a' - 'A'));
 	return (c);
 }
 
@@ -34,4 +34,11 @@ int	ft_tolower(int c)
 // 	c = '-';
 // 	printf("%c\n", tolower(c));
 // 	return (0);
+// }
+
+// int	ft_tolower(int c)
+// {
+// 	if (c >= 'A' && c <= 'Z')
+// 		return (c + 32);
+// 	return (c);
 // }
