@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 20:40:21 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 21:58:06 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 07:59:06 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,6 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	size_t	word_len;
 
-	if (!s)
-		return (NULL);
 	words = count_words(s, c);
 	res = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!res)

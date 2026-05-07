@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 12:00:00 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 21:53:32 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 07:32:48 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,30 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+
+// int	main(void)
+// {
+// 	t_list	*lst;
+// 	t_list	*new_lst;
+
+// 	// 1. 適当にリストを作成
+// 	lst = ft_lstnew(strdup("42"));
+// 	lst->next = ft_lstnew(strdup("Tokyo"));
+
+// 	// 2. ft_lstmap を実行
+// 	// 内容をコピーしたいだけなので、f には strdup、del には free を入れる
+// 	new_lst = ft_lstmap(lst, (void *(*)(void *))strdup, free);
+
+// 	// 3. 表示
+// 	t_list *tmp = new_lst;
+// 	while (tmp)
+// 	{
+// 		printf("%s\n", (char *)tmp->content);
+// 		tmp = tmp->next;
+// 	}
+
+// 	// 4. 解放（本当は lst も new_lst もやるべきですが、最小構成ということで）
+// 	ft_lstclear(&lst, free);
+// 	ft_lstclear(&new_lst, free);
+// 	return (0);
+// }

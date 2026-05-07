@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:22:07 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/07 20:36:23 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 06:14:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // 	return (0);
 // }
 
-
 // int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // {
 // 	size_t			i;
@@ -68,7 +67,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // 	}
 // 	return (0);
 // }
-
 
 // int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // {

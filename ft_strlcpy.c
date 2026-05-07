@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:54:26 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 22:41:22 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 06:14:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 // 	return (0);
 // }
 
-
 // size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 // {
 // 	size_t i = 0;
@@ -60,7 +59,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 // 	dst[i] = '\0';
 // 	return (len);
 // }
-
 
 // size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 // {

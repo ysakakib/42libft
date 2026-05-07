@@ -4,7 +4,12 @@
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+         #
-q
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/05/08 06:27:32 by yusakaki          #+#    #+#              #
+#    Updated: 2026/05/08 06:27:35 by yusakaki         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME	=	libft.a
 CC		=	gcc
 CFLAGS	=	-Wall -Wextra -Werror

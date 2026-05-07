@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/23 19:02:10 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/05 04:42:14 by yusakaki         ###   ########.fr       */
+/*   Created: 2026/04/24 15:18:02 by yusakaki          #+#    #+#             */
+/*   Updated: 2026/05/08 06:52:16 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	get_len(int n)
+static int	get_len(long n)
 {
 	int	len;
 
@@ -48,9 +48,8 @@ char	*ft_itoa(int n)
 	}
 	while (nbr > 0)
 	{
-		s[l - 1] = (nbr % 10) + '0';
+		s[--l] = (nbr % 10) + '0';
 		nbr /= 10;
-		l--;
 	}
 	return (s);
 }

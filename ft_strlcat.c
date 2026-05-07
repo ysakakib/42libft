@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 21:03:25 by hshimizu          #+#    #+#             */
-/*   Updated: 2026/05/06 23:23:07 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 06:14:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,13 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t src_len = ft_strlen(src);
-	size_t dst_len = 0;
-	size_t i = 0;
+	size_t	src_len;
+	size_t	dst_len;
+	size_t	i;
+
+	src_len = ft_strlen(src);
+	dst_len = 0;
+	i = 0;
 	while (dst[dst_len] != '\0' && dst_len < size)
 		dst_len++;
 	if (dst_len == size)
@@ -42,7 +46,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // 	return (0);
 // }
 
-
 // size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // {
 // 	size_t	i;
@@ -62,7 +65,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // 	dst[dst_len + i] = '\0';
 // 	return (src_len + dst_len);
 // }
-
 
 // size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // {

@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 10:50:28 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 20:05:01 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 06:14:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int	ft_isalpha(int c)
 // 	printf("%d\n", ft_isalpha(c));
 // 	return (0);
 // }
-
 
 // int	ft_isalpha(int c)
 // {

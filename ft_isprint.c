@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 15:18:02 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/06 20:12:31 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 06:14:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ int	ft_isprint(int c)
 // 	printf("%d\n", ft_isprint(c));
 // 	return (0);
 // }
-
 
 // int	ft_isprint(int c)
 // {

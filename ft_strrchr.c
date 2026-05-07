@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:17:03 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/07 19:30:50 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 06:14:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ char	*ft_strrchr(const char *s, int c)
 // 	return (0);
 // }
 
-
 // char	*ft_strrchr(const char *s, int c)
 // {
 // 	char	*last;
@@ -62,7 +61,6 @@ char	*ft_strrchr(const char *s, int c)
 // 		s++;
 // 	}
 // }
-
 
 // char	*ft_strrchr(const char *s, int c)
 // {

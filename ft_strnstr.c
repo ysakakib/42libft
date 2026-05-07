@@ -6,7 +6,7 @@
 /*   By: yusakaki <yusakaki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:23:24 by yusakaki          #+#    #+#             */
-/*   Updated: 2026/05/07 21:46:22 by yusakaki         ###   ########.fr       */
+/*   Updated: 2026/05/08 06:14:25 by yusakaki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 // 	}
 // 	return (NULL);
 // }
-
 
 // char	*ft_strnstr(const char *big, const char *little, size_t len)
 // {
